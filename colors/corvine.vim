@@ -14,6 +14,10 @@ if exists('syntax_on')
   syntax reset
 endif
 
+" Folder icon #D7AF87
+" Folder text #FFD7AF
+" Folder text #FFD7AF
+
 let g:colors_name = 'corvine'
 
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
@@ -21,7 +25,7 @@ let s:italics = (((&t_ZH != '' && &t_ZH != '[7m') || has('gui_running')) && !ha
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   let g:terminal_ansi_colors = ['#3a3a3a', '#d78787', '#87af5f', '#d7d7af',
-        \ '#87afd7', '#afafd7', '#87d7d7', '#d0d0d0', '#6c6c6c', '#ffafaf',
+        \ '#87afd7', '#afafd7', '#FFD9B3', '#d0d0d0', '#6c6c6c', '#ffafaf',
         \ '#afd787', '#d7d787', '#87d7ff', '#d7afd7', '#5fd7d7', '#eeeeee']
   if has('nvim')
     let g:terminal_color_0 = '#3a3a3a'
@@ -30,7 +34,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     let g:terminal_color_3 = '#d7d7af'
     let g:terminal_color_4 = '#87afd7'
     let g:terminal_color_5 = '#afafd7'
-    let g:terminal_color_6 = '#87d7d7'
+    let g:terminal_color_6 = '#FFD9B3'
     let g:terminal_color_7 = '#d0d0d0'
     let g:terminal_color_8 = '#6c6c6c'
     let g:terminal_color_9 = '#ffafaf'
@@ -87,7 +91,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi Statement guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi Type guifg=#afafd7 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi Delimiter guifg=#949494 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-  hi Directory guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+  hi Directory guifg=#FFD9B3 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi Function guifg=#d7afd7 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi Number guifg=#d7af87 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#949494 guibg=NONE guisp=NONE gui=italic cterm=italic
@@ -245,7 +249,7 @@ if s:t_Co >= 256
   hi Statement ctermfg=110 ctermbg=NONE cterm=NONE
   hi Type ctermfg=146 ctermbg=NONE cterm=NONE
   hi Delimiter ctermfg=246 ctermbg=NONE cterm=NONE
-  hi Directory ctermfg=116 ctermbg=NONE cterm=NONE
+  hi Directory ctermfg=223 ctermbg=NONE cterm=NONE
   hi Function ctermfg=182 ctermbg=NONE cterm=NONE
   hi Number ctermfg=180 ctermbg=NONE cterm=NONE
   hi SpecialComment ctermfg=246 ctermbg=NONE cterm=italic
@@ -364,7 +368,7 @@ endif
 " Color: base7         #949494 ~
 " Color: base8         #d0d0d0 ~
 " Color: base9         #eeeeee ~
-" Color: aqua          #87d7d7 ~
+" Color: aqua          #FFD9B3 ~
 " Color: blue          #87afd7 ~
 " Color: dark_purple   #8787af ~
 " Color: green         #87af5f ~
